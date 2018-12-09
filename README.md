@@ -3,8 +3,6 @@
 ## Dataset and Packages
 The dataset is available at [Caltech-256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
 
-For supervised classification, we made a train-val-test split to generate 17803 train, 4665 validation and 7312 test images. The file named train_val_test_split.py contains code to do the split. Please ensure that the path to the image folders are correct to ensure the split goes through fine.
-
 Packages needed:
 1. Keras (use TensorFlow backend)
 2. TensorFlow
@@ -16,7 +14,9 @@ Packages needed:
 8. time
 
 ## 1. Executing the Supervised Code
-For all files in supervised scetion, the code assumes the training images to be present in /train, test images in /test and validation images in /validation folders. Please ensure the corresponsing folders are present and this file is in the same directory as those folders or modify the file to point to the correct folders.
+For supervised classification, we made a train-val-test split to generate 17803 train, 4665 validation and 7312 test images. The file named train_val_test_split.py contains code to do the split. Please ensure that the path to the image folders are correct to ensure the split goes through fine.
+
+For all files in supervised section, the code assumes the training images to be present in /train, test images in /test and validation images in /validation folders. Please ensure the corresponsing folders are present and this file is in the same directory as those folders or modify the file to point to the correct folders.
 
 For HD-CNN, we create directory structure for all coarse and fine categories, so ensure that the target directory has necessary permissions.
 
