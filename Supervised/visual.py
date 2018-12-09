@@ -1,5 +1,5 @@
 
-## load the model 
+## load the model and add this code to tvisualize the model's activation on a given layer
 img_path = '256_ObjectCategories/test/056.dog/056_0037.jpg'
 
 img = image.load_img(img_path, target_size=(128, 128)) 
