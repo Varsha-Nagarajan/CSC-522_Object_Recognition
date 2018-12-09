@@ -19,7 +19,7 @@ Please make sure the following packages are installed.
 
 Also, create a **"data/"** directory in the same directory where the python files exist. The downloaded dataset has to be extracted in the data directory which will create **"data/256_ObjectCategories"** where the actual dataset exists.
 
-### 2.1 Auto Encoder
+### 2.1 Convolutional Autoencoder
 run autoencoder_training.py to train the autoencoder model.
 
 run evaluate_model.py to evaluate the entropy and purity of the k-means clusters using the features extracted by the autoencoder.
