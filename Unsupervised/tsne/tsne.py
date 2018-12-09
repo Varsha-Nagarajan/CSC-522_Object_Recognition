@@ -3,7 +3,7 @@ from __future__ import print_function
 import pandas as pd
 from datetime import datetime as dt
 import numpy as np
-from Unsupervised import clustering_metrics
+from Unsupervised.tsne import clustering_metrics
 import matplotlib.pyplot as plt
 from matplotlib import pyplot
 from sklearn import (manifold, decomposition)
