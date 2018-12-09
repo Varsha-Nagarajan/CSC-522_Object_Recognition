@@ -17,7 +17,7 @@ Please make sure the following packages are installed.
 6. keras
 7. time
 
-Also, create a **"data/"** directory in the same directory where the tsne.py and clustering_metrics.py exist. The downloaded dataset has to be extracted in the data directory which will create **"data/256_ObjectCategories"** where the actual dataset exists.
+Also, create a **"data/"** directory in the same directory where the python files exist. The downloaded dataset has to be extracted in the data directory which will create **"data/256_ObjectCategories"** where the actual dataset exists.
 
 ### 2.1 Auto Encoder
 run autoencoder_training.py to train the autoencoder model.
