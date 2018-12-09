@@ -20,7 +20,13 @@ Please make sure the following packages are installed.
 Also, create a **"data/"** directory in the same directory where the tsne.py and clustering_metrics.py exist. The downloaded dataset has to be extracted in the data directory which will create **"data/256_ObjectCategories"** where the actual dataset exists.
 
 ### 2.1 Auto Encoder
+run autoencoder_training.py to train the autoencoder model.
 
+run evaluate_model.py to evaluate the entropy and purity of the k-means clusters using the features extracted by the autoencoder.
+
+run visualize_feature_maps.py to create the visualization of the feature maps extracted by the encoder.
+
+run kmeans_baseline.py to perform and evaluate the k-means baseline approach, which trains k-means with raw pixel values.
 
 ### 2.2 t-Distributed Stochastic Neighbor Embedding (tsne)
 
