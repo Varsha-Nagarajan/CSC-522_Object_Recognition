@@ -3,8 +3,10 @@
 ## Dataset
 The dataset is available at [Caltech-256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
 
-## 1. Executing the Unsupervised Code
+For supervised classification, we made a train-val-test split 
 
+## 1. Executing the Unsupervised Code
+### 1.1 Plain Classifier
 ## 2. Executing the Supervised Code 
 ### 2.1 Auto Encoder
 ### 2.2 t-Distributed Stochastic Neighbor Embedding (tsne)
