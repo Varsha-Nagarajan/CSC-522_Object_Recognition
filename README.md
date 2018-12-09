@@ -5,9 +5,9 @@ The dataset is available at [Caltech-256](http://www.vision.caltech.edu/Image_Da
 
 For supervised classification, we made a train-val-test split 
 
-## 1. Executing the Unsupervised Code
+## 1. Executing the Supervised Code
 ### 1.1 Plain Classifier
-## 2. Executing the Supervised Code 
+## 2. Executing the Unsupervised Code 
 Please make sure the following packages are installed.
 1. pandas
 2. numpy
