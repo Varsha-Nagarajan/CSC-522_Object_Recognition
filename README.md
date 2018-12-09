@@ -34,8 +34,6 @@ To run, type: python \<filename\>
 Feel free to experiment with the hyper-parameters for spectral clustering (number of clusters, dimensions, value of t), the threshold and cost for the maximum number of fine categories within a cluster and the models (optimizers - decay, momentum, learning rate). 
 
 ## 2. Executing the Unsupervised Code 
-### 2.1 Auto Encoder
-### 2.2 t-Distributed Stochastic Neighbor Embedding (tsne)
 Please make sure the following packages are installed.
 1. pandas
 2. numpy
@@ -43,9 +41,26 @@ Please make sure the following packages are installed.
 4. sklearn
 5. tensorflow
 6. keras
+7. time
 
 Also, create a **"data/"** directory in the same directory where the tsne.py and clustering_metrics.py exist. The downloaded dataset has to be extracted in the data directory which will create **"data/256_ObjectCategories"** where the actual dataset exists.
+### 2.1 Convolutional Autoencoder
+To Train the autoencoder model:
 
+```python autoencoder_training.py```
+
+To evaluate the entropy and purity of the k-means clusters using the features extracted by the autoencoder:
+
+```python evaluate_model.py```
+
+To create the visualization of the feature maps extracted by the encoder:
+
+```python visualize_feature_maps.py ```
+
+To perform and evaluate the k-means baseline approach(which trains k-means with raw pixel values):
+
+```python kmeans_baseline.py```
+### 2.2 t-Distributed Stochastic Neighbor Embedding (tsne)
 Execute the below command to run tsne on the provided data.
 
 ```python tsne.py```
