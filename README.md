@@ -1,6 +1,6 @@
 # CSC522 Object Recognition
 
-## Dataset
+## Dataset and Packages
 The dataset is available at [Caltech-256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/)
 
 For supervised classification, we made a train-val-test split to generate 17803 train, 4665 validation and 7312 test images. The file named train_val_test_split.py contains code to do the split. Please ensure that the path to the image folders are correct to ensure the split goes through fine.
