@@ -49,7 +49,7 @@ To run, type: ```python <filename>```
 Feel free to experiment with the hyper-parameters for spectral clustering (number of clusters, dimensions, value of t), the threshold and cost for the maximum number of fine categories within a cluster and the models (mini batch size, optimizers - decay, momentum, learning rate). 
 
 ## 2. Executing the Unsupervised Code 
-Also, create a **"data/"** directory in the same directory where the tsne.py and clustering_metrics.py exist. The downloaded dataset has to be extracted in the data directory which will create **"data/256_ObjectCategories"** where the actual dataset exists.
+Create a **"data/"** directory in the same directory where the tsne.py and clustering_metrics.py exist. The downloaded dataset has to be extracted in the data directory which will create **"data/256_ObjectCategories"** where the actual dataset exists.
 ### 2.1 Convolutional Autoencoder
 To Train the autoencoder model: ```python autoencoder_training.py```
 
