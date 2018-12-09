@@ -4,6 +4,8 @@ from keras.models import Model, load_model
 from keras.preprocessing import image
 from matplotlib import pyplot as plt
 from keras import models
+from keras import layers
+from keras.layers import Input, Activation
 
 ## load the model and add this code to tvisualize the model's activation on a given layer
 img_path = '256_ObjectCategories/test/056.dog/056_0037.jpg'
