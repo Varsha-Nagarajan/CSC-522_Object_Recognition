@@ -7,7 +7,7 @@ For supervised classification, we made a train-val-test split to generate 17803 
 
 ## 1. Executing the Supervised Code
 Packages needed:
-1. Keras (use TensorFlow backend)?
+1. Keras (use TensorFlow backend)
 2. TensorFlow
 3. sklearn
 4. pandas
