@@ -6,8 +6,11 @@ from matplotlib import pyplot as plt
 from keras import models
 from keras import layers
 from keras.layers import Input, Activation
+from keras.applications.resnet50 import ResNet50
 
 ## load the model and add this code to tvisualize the model's activation on a given layer
+model = ResNet50(weights='imagenet')
+
 img_path = '256_ObjectCategories/test/056.dog/056_0037.jpg'
 
 img = image.load_img(img_path, target_size=(128, 128)) 
@@ -28,6 +31,8 @@ images = np.vstack([x])
 
 layer_outputs = [layer.output for layer in model.layers[1:]]
 activation_model = models.Model(inputs=model.input, outputs=layer_outputs)
+
+activations = activation_model.predict(img_arr)
 
 layer_activation = activations[3] # the layer activation that needs to be visualized
 print(layer_activation.shape)
